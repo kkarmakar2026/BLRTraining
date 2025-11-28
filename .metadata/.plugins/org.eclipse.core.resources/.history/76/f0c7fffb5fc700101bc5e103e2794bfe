@@ -1,0 +1,21 @@
+package com.mphasis;
+
+import java.util.Arrays;   // Import Arrays utility class
+import java.util.Scanner;  // Import Scanner if you plan to use it
+
+public class ArrayPractice {
+
+    public static void main(String[] args) {
+        // Declare and initialize array
+        int[] arr = {10, 20, 30, 40};
+
+        // Print array using Arrays.toString()
+        System.out.println(Arrays.toString(arr));
+        String nums = Arrays.toString(arr);
+        System.out.println(nums);
+        Arrays.sort(arr);
+        for(int ele :arr) {
+        	System.out.println(Arrays.binarySearch(arr, 30));
+        }
+    }
+}

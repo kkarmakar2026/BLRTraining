@@ -1,0 +1,15 @@
+package com.mphasis;
+
+import java.util.ArrayList;
+
+public class DemoOnArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList alist = new ArrayList();
+		alist.add(56);
+		alist.add("Koushik");
+		alist.add(true);
+		alist.add(89.76);
+	}
+}

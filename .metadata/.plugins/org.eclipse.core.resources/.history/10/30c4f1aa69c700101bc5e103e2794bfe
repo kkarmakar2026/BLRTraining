@@ -1,0 +1,28 @@
+package com.mphasis;
+
+public class DemoException {
+
+    public static void main(String[] args) {
+        int a = 5, b[] = {4,2,6,3,0};
+        try {
+        	for(int ele: b) {
+        		System.out.println(a / ele);
+        	}
+        	
+		} catch (ArithmeticException ae) {
+			// TODO: handle exception
+			ae.printStackTrace();
+		}
+        catch (RuntimeException re) {
+			// TODO: handle exception
+		}
+        catch (Exception e) {
+			// TODO: handle exception
+		}
+        finally {
+			System.out.println("Finally bloked called");
+		}
+        System.out.println("Application closed successfully");
+        
+    }
+}

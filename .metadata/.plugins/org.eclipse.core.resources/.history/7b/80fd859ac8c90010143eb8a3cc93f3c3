@@ -1,0 +1,6 @@
+package com.mphasis;
+
+public class ArrayPrinter<T> {
+	private T[] arr;
+
+}

@@ -1,0 +1,11 @@
+package com.mphasis;
+
+public class MyStack {
+
+	private static Node top =null;
+	
+	public static boolean isEmpty() {
+		return top == null;
+	}
+	
+}

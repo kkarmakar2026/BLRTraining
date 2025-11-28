@@ -1,0 +1,35 @@
+package com.mphasis;
+
+public class DemoException {
+
+    public static void main(String[] args) {
+        int a = 5, b[] = {4, 2, 6, 3, 0};
+        String str ="";
+
+        try {
+            for (int i = 0; i <= b.length; i++) {
+                System.out.println("Result of " + a + "/" + b[i] + " = " + (a / b[i]));
+            }
+        }
+        catch (Exception e) {
+			// TODO: handle exception
+        	str.equals("Hello");
+        }
+    }
+}
+    
+        
+//        catch (ArithmeticException ae) {
+//            System.out.println("ArithmeticException caught: Division by zero!");
+//            ae.printStackTrace();
+//        } catch (RuntimeException re) {
+//            System.out.println("RuntimeException caught: " + re);
+//        } catch (Exception e) {
+//            System.out.println("General Exception caught: " + e);
+//        } finally {
+//            System.out.println("Finally block called");
+//        }
+
+//        System.out.println("Application closed successfully");
+//    }
+

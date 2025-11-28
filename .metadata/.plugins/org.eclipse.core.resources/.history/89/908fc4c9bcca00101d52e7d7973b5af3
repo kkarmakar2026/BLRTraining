@@ -1,0 +1,48 @@
+package com.mphasis;
+
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Set;
+
+public class DemoOnMap {
+
+    public static void main(String[] args) {
+        
+        HashMap<Integer,String> hashMap = new HashMap<Integer, String>();
+        hashMap.put(1, "Ram");
+        hashMap.put(43,"Sham");
+        hashMap.put(23, "Naresh");
+        hashMap.put(3, "Siraj");
+        
+        System.out.println(hashMap);
+        hashMap.put(3, "Praveen"); // replaces "Siraj"
+        System.out.println(hashMap);
+        
+        System.out.println(hashMap.keySet());
+        System.out.println(hashMap.values());
+        System.out.println(hashMap.entrySet());
+        
+        Set<Integer> keySet = hashMap.keySet();
+        Set<String> valueSet = new HashSet<>(hashMap.values()); // ✅ fixed
+        
+        Iterator<Integer> keyItr = keySet.iterator();
+        while(keyItr.hasNext())
+            System.out.println(keyItr.next());
+        
+        Iterator<String> valItr = valueSet.iterator();
+        while(valItr.hasNext())
+            System.out.println(valItr.next());
+        
+        
+        Hashtable<Integer, String> table = new Hashtable<Integer, String>();
+        table.put(5, "Koushik");
+        table.put(2, "Amit");
+        table.put(10,"Sham");
+        table.put(4, "Naresh");
+        System.out.println(table);
+        
+    }
+}

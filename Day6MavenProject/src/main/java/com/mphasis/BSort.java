@@ -1,0 +1,30 @@
+package com.mphasis;
+
+public class BSort {
+    public static void main(String[] args) {
+
+        int arr[] = {23, 10, 15, 45, 62, 27, 9, 89, 13};
+        int mc = 0;
+
+        // Bubble Sort
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // swap arr[j] and arr[j+1]
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    mc++;
+                }
+            }
+        }
+
+        // Print sorted array
+        System.out.println("Sorted array:");
+        for (int k = 0; k < arr.length; k++) {
+            System.out.print(arr[k] + " ");
+        }
+        System.out.println();
+        System.out.println(mc);
+    }
+}

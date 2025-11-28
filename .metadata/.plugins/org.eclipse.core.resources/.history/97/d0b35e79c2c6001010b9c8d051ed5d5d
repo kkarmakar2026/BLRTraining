@@ -1,0 +1,29 @@
+package com.mphasis.PracticeMphasis;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+class Employee {   // package-private, allowed in same file
+    private int id;
+    private String name;
+    private String department;
+}
+
+public class App {
+    public static void main(String[] args) {
+        // Using no-args constructor + setters
+        Employee e1 = new Employee();
+        e1.setId(1);
+        e1.setName("Balai");
+        e1.setDepartment("IT");
+        System.out.println("Employee 1: " + e1);
+
+        // Using all-args constructor
+        Employee e2 = new Employee(2, "Koushik", "Finance");
+        System.out.println("Employee 2: " + e2);
+    }
+}

@@ -1,0 +1,32 @@
+package com.mphasis;
+
+import java.util.function.Predicate;
+
+public class DemoOnPredicate {
+
+    public static void main(String[] args) {
+        
+        // Predicate to check if a number is even
+        Predicate<Integer> isEven = (n) -> n % 2 == 0;
+        System.out.println(isEven.test(56)); // true
+
+        if (isEven.test(35))
+            System.out.println("even");
+        else {
+            System.out.println("odd");
+        }
+
+        System.out.println(isEven.test(78) ? "Even" : "Odd");
+
+        // Predicate to check if string length > 7
+        Predicate<String> checkLength = str -> str.length() > 7;
+        System.out.println(checkLength.test("balai")); // false
+        
+        Predicate<Employee> checkSalary = (emp)->emp.getSalary()>=50000;
+        	Employee[] emparr = null;
+			for(Employee e:emparr)
+        		if(checkSalary.test(e))
+        			System.out.println(emparr);
+        
+    }
+}

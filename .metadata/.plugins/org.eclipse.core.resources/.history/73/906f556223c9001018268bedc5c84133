@@ -1,0 +1,73 @@
+package com.mphasis;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
+public class LoalDate {
+    public static void main(String[] args) {
+        // Creation
+        LocalDate today = LocalDate.now();
+        LocalDate specificDate = LocalDate.of(2024, 2, 2);
+        LocalDate parsedDate = LocalDate.parse("2025-11-24");
+        LocalDate yearDay = LocalDate.ofYearDay(2025, 100);
+
+        System.out.println("Today: " + today);
+        System.out.println("Specific Date: " + specificDate);
+        System.out.println("Parsed Date: " + parsedDate);
+        System.out.println("100th day of 2025: " + yearDay);
+
+        // Getters
+        System.out.println("Year: " + today.getYear());
+        System.out.println("Month: " + today.getMonth());
+        System.out.println("Month Value: " + today.getMonthValue());
+        System.out.println("Day of Month: " + today.getDayOfMonth());
+        System.out.println("Day of Week: " + today.getDayOfWeek());
+        System.out.println("Day of Year: " + today.getDayOfYear());
+        System.out.println("Length of Month: " + today.lengthOfMonth());
+        System.out.println("Length of Year: " + today.lengthOfYear());
+
+        // Manipulation
+        System.out.println("10 days later: " + today.plusDays(10));
+        System.out.println("2 weeks later: " + today.plusWeeks(2));
+        System.out.println("3 months later: " + today.plusMonths(3));
+        System.out.println("1 year later: " + today.plusYears(1));
+        System.out.println("10 days earlier: " + today.minusDays(10));
+        System.out.println("2 weeks earlier: " + today.minusWeeks(2));
+        System.out.println("3 months earlier: " + today.minusMonths(3));
+        System.out.println("1 year earlier: " + today.minusYears(1));
+
+        // Comparison
+        LocalDate anotherDate = LocalDate.of(2025, 12, 31);
+        System.out.println("Is today before 2025-12-31? " + today.isBefore(anotherDate));
+        System.out.println("Is today after 2025-12-31? " + today.isAfter(anotherDate));
+        System.out.println("Is today equal to 2025-11-24? " + today.isEqual(parsedDate));
+        System.out.println("Is leap year? " + today.isLeapYear());
+
+        // Adjustment
+        System.out.println("With Year 2030: " + today.withYear(2030));
+        System.out.println("With Month 5: " + today.withMonth(5));
+        System.out.println("With Day of Month 15: " + today.withDayOfMonth(15));
+        System.out.println("With Day of Year 200: " + today.withDayOfYear(200));
+
+        // Conversion
+        LocalDateTime startOfDay = today.atStartOfDay();
+        LocalDateTime atTime = today.atTime(10, 30);
+        long epochDay = today.toEpochDay();
+
+        System.out.println("Start of Day: " + startOfDay);
+        System.out.println("At Time 10:30: " + atTime);
+        System.out.println("Epoch Day: " + epochDay);
+
+        // Formatting
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String formatted = today.format(formatter);
+        System.out.println("Formatted Date: " + formatted);
+        
+        today = LocalDate.now();
+        LocalDate dob = LocalDate.of(2023, 10, 20);
+        Period p = Period.between(dob, today);
+        System.out.println("My age is " +p.getYears()+" years"+p.getMonths()+" months"+p.getDays()+" days");
+    }
+}

@@ -1,0 +1,21 @@
+package com.mphasis;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class DemoOnLinkedList {
+
+	public static void main(String[] args) {
+		
+		LinkedList<Integer> ll = new LinkedList<Integer>();
+		Integer [] irr = {56,34,23,89,66,90,12,33};
+		ll = (LinkedList<Integer>)ArrayList.asList(irr);
+		Iterator<Integer> itr = ll.descendingIterator();
+		
+		while(itr.hasNext())
+			System.out.println(itr.next());
+
+	}
+}

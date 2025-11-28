@@ -1,0 +1,25 @@
+package com.mphasis;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+/**
+ * Hello world!
+ */
+public class App {
+    public static void main(String[] args) {
+
+    Integer arr[] = {23,12,34,34,46,67,89,26,49,14,90};
+    Arrays.stream(arr).forEach(System.out::println);
+    List<Integer> iList =Arrays.stream(arr).collect(Collectors.toList());
+    System.out.println(iList);
+    
+    int min = Arrays.stream(arr).min((a,b)->a-b).get();
+    System.out.println(min);
+    min = Arrays.stream(arr).min(Integer::compare).get();
+    
+    long count = Arrays.stream(arr).count();
+    System.out.println(count);
+    }
+}

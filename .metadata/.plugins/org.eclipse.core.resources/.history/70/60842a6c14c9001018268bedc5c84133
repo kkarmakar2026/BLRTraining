@@ -1,0 +1,23 @@
+package com.mphasis;
+
+import java.util.Date;
+
+public class DemoOnDatesAndTime {
+	
+	public static void main(String[] args) {
+		
+		Date currentDate = new Date();
+		System.out.println(currentDate);
+		
+		long ms = System.currentTimeMillis();
+		System.out.println(ms);
+		Date currentDateOfMS = new Date(ms);
+		System.out.println(currentDateOfMS);
+		
+		long msl = 123457890123l;
+		Date mydate = new Date(msl);
+		System.out.println(mydate);
+		
+	}
+
+}

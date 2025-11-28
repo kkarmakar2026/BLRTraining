@@ -1,0 +1,14 @@
+package com.mphasis;
+
+import java.sql.Date;
+
+public class ConvertDate {
+
+	public static void main(String[] args) {
+		
+		Date date = new Date(2025-1900,10,24);
+		System.out.println(date);
+		System.out.println(new java.util.Date());
+		
+	}
+}

@@ -1,0 +1,26 @@
+package com.mphasis;
+
+/**
+ * 
+ */
+public class Node {
+
+	private int data;
+	private Node next;
+	
+	public int getData() {
+		return data;
+	}
+
+	public Node getNext() {
+		return next;
+	}
+
+	public Node(int data) {
+		super();
+		this.data = data;
+		//this.next = next;
+	}
+	
+	
+}

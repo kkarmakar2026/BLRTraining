@@ -1,0 +1,32 @@
+package com.mphasis;
+
+public class Order<T> {
+	
+	private T item;
+
+	public T getItem() {
+		return item;
+	}
+
+	public void setItem(T item) {
+		this.item = item;
+	}
+	
+
+	public Order(T item) {
+		super();
+		this.item = item;
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Order [item=" + item + "]";
+	}
+
+	Item item1 = new Item(12,"Laptop",5000);
+	
+	
+	
+}

@@ -1,0 +1,18 @@
+package com.mphasis;
+
+// Step 1: Define a functional interface
+@FunctionalInterface
+interface LambdaName {
+    void printName();
+}
+
+public class LambdaNameDemo {
+    public static void main(String[] args) {
+        
+        // Step 2: Implement the interface using a lambda expression
+        LambdaName printer = () -> System.out.println("My name is John Doe");
+
+        // Step 3: Call the method
+        printer.printName();
+    }
+}

@@ -1,0 +1,40 @@
+package com.mphasis;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class DemoOnStaticMethodReferences {
+    
+    static class StringLength {
+        public static int strLen() {
+            String s = "Balai";
+            return s.length();
+        }
+    }
+    
+    static class NumberUtil {
+        public static int squareNum(int num) {
+            return num * num;
+        }
+        
+        public static double log(double num) {
+            return Math.log(num);
+        }
+    }
+    
+    public static void main(String[] args) {
+        
+        Function<Integer, Integer> squareFunctionUsingLambda = (num) -> NumberUtil.squareNum(num);
+        Function<Integer, Integer> squareFunctionMR = NumberUtil::squareNum;
+        System.out.println(squareFunctionMR.apply(6));
+        System.out.println(squareFunctionUsingLambda.apply(8));
+        
+        Function<Double, Double> logUsingMR = NumberUtil::log;
+        Function<Double, Double> logUsingLambda = (num) -> NumberUtil.log(num);
+        System.out.println(logUsingLambda.apply(6.0));
+        System.out.println(logUsingMR.apply(8.0));
+        
+        Supplier<Integer> findLength = StringLength::strLen;
+        System.out.println(findLength.get());
+    }
+}

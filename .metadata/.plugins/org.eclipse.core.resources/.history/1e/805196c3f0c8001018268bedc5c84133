@@ -1,0 +1,15 @@
+package com.mphasis;
+
+import java.util.function.Consumer;
+public class DemoOnConsumer {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Consumer<Integer> squareConsumer =(num1)->{
+			System.out.println(num1*num1);
+		};
+		squareConsumer.accept(5);
+	}
+}

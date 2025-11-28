@@ -1,0 +1,18 @@
+package com.mphasis;
+
+
+@FunctionalInterface
+interface LambdaName {
+    void printName();
+}
+
+public class LambdaNameDemo {
+    public static void main(String[] args) {
+        
+        
+        LambdaName printer= ()->{
+        	System.out.println("My name is koushik");
+        };
+        printer.printName();
+    }
+}

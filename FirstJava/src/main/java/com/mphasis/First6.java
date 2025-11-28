@@ -1,0 +1,14 @@
+package com.mphasis;
+import java.util.Scanner;
+public class First6 {
+	public static void main (String a[]) {
+		char choice;
+		Scanner sc = new Scanner (System.in);
+		do {
+			System.out.println("Koushik");
+			System.out.println("Do you want to repeat");
+			choice = 'n';
+		}while(choice!='n');
+	}
+
+}

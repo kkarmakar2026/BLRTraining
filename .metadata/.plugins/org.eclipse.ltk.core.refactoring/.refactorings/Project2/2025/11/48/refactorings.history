@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.mphasis.App.java&apos; to &apos;TaxCalculationApp.java&apos;&#x0D;&#x0A;- Original project: &apos;Project2&apos;&#x0D;&#x0A;- Original element: &apos;com.mphasis.App.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.mphasis.TaxCalculationApp.java&apos;" description="Rename compilation unit &apos;App.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mphasis{App.java" name="TaxCalculationApp.java" references="false" stamp="1764214670939" version="1.0"/>
+</session>

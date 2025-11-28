@@ -1,0 +1,12 @@
+package com.mphasis;
+
+public class MutableStrings {
+	public static void main(String a[]) {
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("koushik");
+		sb.append("karmakar");
+		System.out.println(sb);
+	}
+
+}

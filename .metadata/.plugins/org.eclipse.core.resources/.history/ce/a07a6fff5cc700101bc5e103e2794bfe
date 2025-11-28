@@ -1,0 +1,29 @@
+package com.mphasis;
+
+
+public class ArrayDemo {
+
+    public static void main(String[] args) {
+        // Create an array of Fruits with size 5
+        Fruits arr[] = new Fruits[5];
+
+        // Create fruit objects
+        Fruits fruit1 = new Fruits("Apple", "Red", 60.50);
+        Fruits fruit2 = new Fruits("Banana", "Yellow", 20.00);
+        Fruits fruit3 = new Fruits("Orange", "Orange", 40.00);
+        Fruits fruit4 = new Fruits("Grapes", "Green", 80.00);
+        Fruits fruit5 = new Fruits("Mango", "Yellow", 100.00);
+
+        // Store them in the array
+        arr[0] = fruit1;
+        arr[1] = fruit2;
+        arr[2] = fruit3;
+        arr[3] = fruit4;
+        arr[4] = fruit5;
+
+        // Display all fruits using a loop
+        for (Fruits f : arr) {
+            System.out.println(f);
+        }
+    }
+}

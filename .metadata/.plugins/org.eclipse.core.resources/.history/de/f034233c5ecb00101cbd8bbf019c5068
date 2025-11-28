@@ -1,0 +1,10 @@
+package com.mphasis;
+
+private static top = null;
+public static void createNode() {
+	
+}
+
+public class StackUsingLinkeList {
+
+}

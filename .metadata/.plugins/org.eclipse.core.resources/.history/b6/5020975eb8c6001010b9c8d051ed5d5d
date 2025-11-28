@@ -1,0 +1,24 @@
+package com.mphasis.PracticeMphasis;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Calculator calc = new Calculator();
+
+        // Using overloaded add methods
+        System.out.println("Add two ints: " + calc.add(5, 3));          // 8
+        System.out.println("Add three ints: " + calc.add(1, 2, 3));     // 6
+        System.out.println("Add two doubles: " + calc.add(5.5, 3.2));   // 8.7
+
+        // Using overloaded sub methods
+        System.out.println("Subtract two ints: " + calc.sub(10, 4));    // 6
+        System.out.println("Subtract three ints: " + calc.sub(20, 5, 3)); // 12
+        System.out.println("Subtract two doubles: " + calc.sub(10.5, 4.2)); // 6.3
+    
+    }
+}

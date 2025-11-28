@@ -1,0 +1,12 @@
+package com.mphasis;
+
+public class PrimeChannel implements Video {
+
+	@Override
+	public void playVideo() {
+		
+		System.out.println("Play video in prime");
+		
+	}
+
+}

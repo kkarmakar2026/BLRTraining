@@ -1,0 +1,13 @@
+package com.mphasis;
+
+interface ReverseAString {
+	
+	public void stringReverse(String str);
+
+}
+
+public  class ReverseString{
+	public static void main(String a[] ){
+		
+	}
+}

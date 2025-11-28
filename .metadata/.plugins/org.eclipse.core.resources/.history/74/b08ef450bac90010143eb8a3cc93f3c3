@@ -1,0 +1,20 @@
+package com.mphasis;
+
+public class DemoOnGenerics {
+
+	public static void main(String[] args) {
+		Container<String> c1 = new Container<String>();
+		c1.setItem("Balai");
+		System.out.println(c1.getItem());
+		
+		Container<Student> st = new Container<Student>();
+		Student s = new Student();
+		st.setItem(s);
+		System.out.println(st.getItem());
+		
+		Container<Integer> c3 = new Container<Integer>();
+		c3.setItem(67);
+		System.out.println(c3.getItem());
+	}
+	
+}

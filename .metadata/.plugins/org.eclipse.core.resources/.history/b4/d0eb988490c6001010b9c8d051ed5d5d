@@ -1,0 +1,24 @@
+package com.mphasis;
+
+public class First3 {
+    public static void main(String[] args) {
+        // Outer loop for rows
+        for (int i = 0; i < 7; i++) {
+            // Inner loop for columns
+        	for(int k =0;k<7-i;k++) {
+        	System.out.print(" ");
+        	}
+            for (int j = 0; j<=i; j++) {
+                System.out.print("* "); // print stars in same line
+            }
+        	for(int l =i/2;l<=1;l--) {
+        		System.out.println("*");
+        	}
+        	for(int m =0;m<i/2;m++) {
+        		System.out.println("");
+        	}
+            System.out.println(); // move to next line after each row
+        }
+        
+    }
+}

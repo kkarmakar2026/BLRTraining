@@ -1,0 +1,21 @@
+package com.mphasis;
+
+import java.util.Scanner;
+
+public class LinearSearch {
+
+	int arr[]= {10,20,30,40,50,60,70,80,90,56,23,45};
+	System.out.println("Enter a key elment to search");
+	Scanner sc = new Scanner(System.in);
+	int key = sc.nextInt();
+	
+	for(int i=0;i<arr.length;i++) {
+		if(key==arr[i]) {
+		System.out.println("Element find at "+(i+1)+"th position");
+		break;
+		}
+		else if(i==arr.length) {
+			System.out.println("Elememnt not found");
+		}
+	}
+}

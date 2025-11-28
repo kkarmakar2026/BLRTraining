@@ -1,0 +1,53 @@
+package com.mphasis;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+public class PraciceOnMethodReferences {
+
+    static class Employee {
+        String name;
+        double salary;
+
+        Employee(String name, double salary) {
+            this.name = name;
+            this.salary = salary;
+        }
+
+        public double salaryWithBonus(double bonusPercent) {
+            return salary + (salary * bonusPercent / 100);
+        }
+    }
+
+    static class PasswordValidator {
+        public static boolean isValid(String password) {
+            String regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%^&+=!]).{8,}$";
+            return password.matches(regex);
+        }
+    }
+
+    public static void main(String[] args) {
+
+      
+        List<String> names = Arrays.asList("Anay", "Anita", "Balai", "Naresh", "Sham");
+        Predicate<String> startsWithAThreeDashes = str -> str.startsWith("A");
+        List<String> filteredNames = names.stream()
+                                          .filter(startsWithAThreeDashes)
+                                          .collect(Collectors.toList());
+        System.out.println("Filtered Strings First Letter A: " + filteredNames);
+
+        
+        Employee emp = new Employee("Balai", 50000);
+        Function<Double, Double> bonusFunction = emp::salaryWithBonus;
+        System.out.println(emp.name + " Salary with Bonus: " + bonusFunction.apply(10.0));
+
+       
+        Predicate<String> passwordCheck = PasswordValidator::isValid;
+        System.out.println("Balai@123 valid? " + passwordCheck.test("Balai@123"));
+        System.out.println("balai123 valid? " + passwordCheck.test("balai123"));
+      
+    }
+}

@@ -1,0 +1,27 @@
+package com.mphasis.PracticeMphasis;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+    public static void main(String[] args) {
+    	
+
+  
+    	    
+    	        // Using no-args constructor + setters
+    	        Calculator e1 = new Calculator();
+    	        e1.setId(1);
+    	        e1.setName("Balai");
+    	        e1.setDepartment("IT");
+    	        System.out.println("Employee 1: " + e1);
+
+    	        // Using all-args constructor
+    	        Calculator e2 = new Calculator(2, "Koushik", "Finance");
+    	        System.out.println("Employee 2: " + e2);
+    	    }
+    	}
+
+    }
+}

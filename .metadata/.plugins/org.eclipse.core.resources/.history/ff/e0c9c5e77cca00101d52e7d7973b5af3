@@ -1,0 +1,11 @@
+package com.mphasis;
+
+public class PrimeChannel implements Video {
+
+	public void playVideo() {
+		
+		System.out.println("Play video in prime");
+		
+	}
+
+}

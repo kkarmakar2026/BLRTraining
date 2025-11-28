@@ -1,0 +1,16 @@
+package com.mphasis;
+
+class ArrayPrinter<T> {
+    private T[] array;
+
+    public ArrayPrinter(T[] array) {
+        this.array = array;
+    }
+
+    public void printArray() {
+        for (T element : array) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+}

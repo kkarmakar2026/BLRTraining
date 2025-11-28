@@ -1,0 +1,28 @@
+package com.mphasis;
+
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+public class LocalTimeDemo {
+    public static void main(String[] args) {
+        
+        LocalTime time = LocalTime.now();
+        System.out.println(time);
+
+        LocalTime t1 = LocalTime.of(22, 30);
+        System.out.println(t1);
+
+        LocalTime t2 = LocalTime.of(10, 45, 30);
+        System.out.println(t2);
+
+        System.out.println("Hour: " + time.getHour());
+        System.out.println("Minute: " + time.getMinute());
+        System.out.println("Second: " + time.getSecond());
+        
+        String strTime = "11:35:20";
+        LocalTime convertedTime = LocalTime.parse(strTime);
+        System.out.println(convertedTime);
+        
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("hh:mm:ss a");
+    }
+}

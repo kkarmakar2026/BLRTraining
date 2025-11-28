@@ -1,0 +1,23 @@
+package com.mphasis;
+
+public class BSort {
+	public static void main(String[] args) {
+		
+	
+
+	int arr [] = {23,10,15,45,62,27,9,89,13};
+	for(int i=0;i<arr.length-1;i++) {
+		
+		for(int j = i; j<arr.length-i-1;j++) {
+			if(arr[j]>arr[j+1]) {
+				int temp = arr[i];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+		}
+		for(int k = 0;k<arr.length;k++) {
+		System.out.println(arr[i]);
+		}
+	}
+	}
+}

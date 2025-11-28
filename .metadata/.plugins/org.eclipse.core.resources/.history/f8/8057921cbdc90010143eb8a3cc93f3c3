@@ -1,0 +1,6 @@
+package com.mphasis;
+
+public class Item<T> {
+	private T item;
+
+}

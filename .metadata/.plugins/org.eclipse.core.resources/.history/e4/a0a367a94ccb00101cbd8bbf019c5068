@@ -1,0 +1,60 @@
+package com.mphasis;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+/**
+ * Hello world!
+ */
+public class App {
+    public static void main(String[] args) {
+
+    Integer arr[] = {23,12,34,34,46,67,89,26,49,14,90};
+    // Terminal Operations
+    Arrays.stream(arr).forEach(System.out::println);
+    List<Integer> iList =Arrays.stream(arr).collect(Collectors.toList());
+    System.out.println(iList);
+    
+    int min = Arrays.stream(arr).min((a,b)->a-b).get();
+    System.out.println(min);
+    min = Arrays.stream(arr).min(Integer::compare).get();
+    
+    long count = Arrays.stream(arr).count();
+    System.out.println(count);
+    
+    // Sum of array using reduce
+    int sum = Arrays.stream(arr).reduce(0, (a,b)->a+b);
+    System.out.println("Sum of array elements: "+sum);
+    System.out.println(Arrays.stream(arr).reduce(Integer.MAX_VALUE, (a,b)->a<b?a:b));
+    
+    // Intermediate Operations
+    // 1.Filter
+    
+    Stream.of(arr).filter(num->num%2==0).forEach(System.out::println);
+    
+    // 2.Map
+    Stream.of(arr).map(num->num+10).forEach(System.out::println);
+    
+    // Limit
+    Stream.of(arr).limit(5).forEach(System.out::println);
+    
+    System.out.println(Arrays.stream(arr).distinct().count());
+    System.out.println(Arrays.toString(arr));
+    
+    System.out.println(Stream.of(arr).anyMatch(num->num>25));
+    
+    System.out.println(Stream.of(arr).filter(num->num>25).findFirst().get());
+    
+    
+    Integer [] nums = {23,12,45,56,29,56,15,27,43,90,76};
+    List<Integer> numList = Arrays.asList();
+    numList.stream()
+    .filter(num -> num % 3 == 0)   // keep only numbers divisible by 3
+    .distinct()
+    .skip(2)// remove duplicates
+    .limit(2)
+    .forEach(System.out::println);    
+    }
+}

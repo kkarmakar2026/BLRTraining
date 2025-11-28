@@ -1,0 +1,23 @@
+package com.mphasis;
+
+interface StringLength{
+	int findLength(String [] input);
+
+}
+ 
+
+public class StringLengthArray {
+	public static void main (String a[]) {
+	String arr[] = {"Apple","Banana","Grapes"};
+	StringLength str = (String []st)->{
+		int lengths []=new int[st.length];
+		for(int i= 0;i<st.length;i++) {
+			lengths[i] = st[i].length();
+		}
+		return lengths;
+		
+	};
+	}	
+
+}
+

@@ -1,0 +1,30 @@
+public interface Payment {
+    void processPayment(double amount); // abstract method
+}
+
+// Implementation: Credit Card Payment
+class CreditCardPayment implements Payment {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing credit card payment of $" + amount);
+    }
+}
+
+// Implementation: PayPal Payment
+class PayPalPayment implements Payment {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing PayPal payment of $" + amount);
+    }
+}
+
+// Implementation: UPI Payment
+class UpiPayment implements Payment {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing UPI payment of ₹" + amount);
+    }
+}
+
+// Main class to test interface abstraction
+

@@ -1,0 +1,20 @@
+package com.mphasis;
+import java.util.Scanner;
+
+public class First5 {
+
+	public static void main (String a[]) {
+		System.err.println("Enter a number");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt()
+;
+		while (n<=0) {
+			int temp = n%10;
+			n = n/10;
+			int reversenum = 0;
+			 reversenum = temp*10+reversenum;
+		}
+		
+		
+	}
+}

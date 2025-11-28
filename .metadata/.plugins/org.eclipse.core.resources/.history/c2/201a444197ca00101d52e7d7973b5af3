@@ -1,0 +1,21 @@
+package com.mphasis;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ * Hello world!
+ */
+public class App {
+    public static void main(String[] args) {
+     
+    	ArrayList<Student>  studentList = new ArrayList<Student>();
+    	studentList.add(new Student(101, "Koushik", 23, "Kolkata",89));
+    	studentList.add(new Student(102, "Sham", 23, "Chennai",92));
+    	studentList.add(new Student(103, "Naresh", 22, "Hyderbad",85));
+    	
+    	for(Student s:studentList)
+    		System.out.println(s);
+    	Collections.sort(studentList);
+    }
+}

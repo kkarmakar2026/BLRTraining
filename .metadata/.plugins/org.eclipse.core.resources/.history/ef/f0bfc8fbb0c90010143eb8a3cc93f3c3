@@ -1,0 +1,13 @@
+package com.mphasis;
+
+import java.time.ZonedDateTime;
+
+public class DemoOnZonedDateAndTime {
+
+	public static void main(String[] args) {
+		
+		ZonedDateTime dateTime = ZonedDateTime.now();
+		System.out.println(dateTime);
+		System.out.println(dateTime.getOffset());
+	}
+}

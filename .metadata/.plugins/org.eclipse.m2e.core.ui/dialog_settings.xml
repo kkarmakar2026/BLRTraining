@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day4MavenProjects\src\main\java\com\mphasis\App.java"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day3MavenProject\src\main\java\com\mphasis\LocalTimeDemo.java"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day2MavenProject\src\main\java\com\mphasis"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject\src\main\java\com\mphasis\Account.java"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject\pom.xml"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\FirstJava\src\main\java\com\mphasis\First6.java"/>
+			<item value="C:\Users\koushik.karmakar1\Desktop\Practice"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Practice1\src\com\koushik\first.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.mphasis"/>
+			<item value="com.mphasis.Day5MavenProjects"/>
+			<item value="com.mphasis.Day4MavenProjects"/>
+			<item value="com.mphasis.Day4MavenProject"/>
+			<item value="com.mphasis.Day3MavenProject"/>
+			<item value="com.mphasis.PracticeMphasis"/>
+		</list>
+		<list key="groupId">
+			<item value="com.mphasis"/>
+		</list>
+		<list key="artifactId">
+			<item value="Day6MavenProjects"/>
+			<item value="Day6MavenProject"/>
+			<item value="Project2"/>
+			<item value="Day5MavenProjects"/>
+			<item value="Day5MavenProject"/>
+			<item value="Day4MavenProjects"/>
+			<item value="Day4MavenProject"/>
+			<item value="Day3MavenProject"/>
+			<item value="Day2MavenProject"/>
+			<item value="PracticeMphasis"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="529"/>
+		<item key="x" value="720"/>
+		<item key="y" value="164"/>
+	</section>
+</section>

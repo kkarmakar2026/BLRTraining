@@ -1,0 +1,75 @@
+package com.mphasis;
+
+public class Account {
+    private String accountNumber;
+    private String ifscCode;
+    private String location;
+    private double balance;
+    private int pin;
+
+    // Default constructor
+    public Account() {
+    }
+
+    // Parameterized constructor
+    public Account(String accountNumber, String ifscCode, String location, double balance, int pin) {
+        this.accountNumber = accountNumber;
+        this.ifscCode = ifscCode;
+        this.location = location;
+        this.balance = balance;
+        this.pin = pin;
+    }
+
+    // Getters and Setters
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getIfscCode() {
+        return ifscCode;
+    }
+
+    public void setIfscCode(String ifscCode) {
+        this.ifscCode = ifscCode;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    // Override toString() for meaningful output
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", ifscCode='" + ifscCode + '\'' +
+                ", location='" + location + '\'' +
+                ", balance=" + balance +
+                ", pin=" + pin +
+                '}';
+    }
+}

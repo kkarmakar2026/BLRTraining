@@ -1,0 +1,38 @@
+package com.mphasis;
+
+import java.util.Scanner;
+
+public class QueueUsingArray {
+	
+	 public static int queue [] = new int[10];
+
+	public static int front  = -1;
+	public static int rear = -1;
+	
+	public static boolean isEmpty() {
+		if(rear == -1 && front ==-1)
+			return true;
+		else 
+			return false;
+	}
+	 public static  boolean isFull() {
+		 if (rear == queue.length)
+			 return true;
+		 return false;
+	 }
+	 
+	 public static void push(int ele) {
+		 if(isFull()) {
+			 System.out.println("Queue overflow");
+		 }
+		 Scanner sc = new Scanner(System.in);
+		 int element = sc.nextInt();
+		  ele = element;
+		  top = 
+	 }
+	 
+	 public static void pop() {
+		 
+	 }
+	
+}

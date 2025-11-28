@@ -1,0 +1,8 @@
+package com.mphasis;
+
+public class DemoException {
+
+	int a=5 ,b=2;
+	System.out.println(a/b);
+	
+}
