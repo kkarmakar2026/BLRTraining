@@ -49,9 +49,9 @@ public class TaxCalculationApp {
 
     private void showWelcomeScreen() {
         System.out.println("==============================================");
-        System.out.println("        TAX CALCULATION APPLICATION");
-        System.out.println("        Developer: Koushik Karmakar");
-        System.out.println("        Email: koushik.karmakar26@gmail.com");
+        System.out.println("|        TAX CALCULATION APPLICATION         |");
+        System.out.println("|        Developer: Koushik Karmakar         |");
+        System.out.println("|       Email: koushik.karmakar26@gmail.com  |");
         System.out.println("==============================================");
         System.out.println("This application helps calculate tax on Properties and Vehicles.");
         System.out.println("Choose options using numeric menu choices. Follow input validations.");
