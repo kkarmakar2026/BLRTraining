@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day7MavenProject\src\main\java\com\mphasis\QuickSort.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day4MavenProjects\src\main\java\com\mphasis\App.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day3MavenProject\src\main\java\com\mphasis\LocalTimeDemo.java"/>
@@ -45,6 +46,8 @@
 			<item value="com.mphasis"/>
 		</list>
 		<list key="artifactId">
+			<item value="TaxCalApp"/>
+			<item value="Day7MavenProject"/>
 			<item value="Day6MavenProjects"/>
 			<item value="Day6MavenProject"/>
 			<item value="Project2"/>
