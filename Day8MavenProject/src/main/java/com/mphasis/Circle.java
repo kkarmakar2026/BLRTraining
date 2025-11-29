@@ -7,7 +7,7 @@ public class Circle implements Shape {
         System.out.println("Circle shape");
     }
 
-    // Extra method for testing
+
     public double area(double radius) {
         return Math.PI * radius * radius;
     }
