@@ -9,6 +9,11 @@ public class App {
 		return "Hello";
 	}
 	
+	public String checkText() {
+		String str = "Koushik";
+		return str;
+	
+	}
 	
     public static void main(String[] args) {
         System.out.println("Hello World!");
