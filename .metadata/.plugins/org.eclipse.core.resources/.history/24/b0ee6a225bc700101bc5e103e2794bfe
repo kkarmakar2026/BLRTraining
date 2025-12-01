@@ -1,8 +1,0 @@
-package com.mphasis;
-
-public class ArrayDemo {
-
-	Fruits arr[] = new Fruits[5];
-	Fruits fruit1 = new Fruits("apple","red",60.50);
-	
-}

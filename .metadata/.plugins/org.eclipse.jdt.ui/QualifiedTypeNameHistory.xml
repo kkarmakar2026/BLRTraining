@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.mphasis.LoggerDemo"/>
-    <fullyQualifiedTypeName name="com.mphasis.Video"/>
-    <fullyQualifiedTypeName name="com.mphasis.ProcessingQuality"/>
-    <fullyQualifiedTypeName name="com.mphasis.HDProcessing"/>
-    <fullyQualifiedTypeName name="com.mphasis.YouTube"/>
-    <fullyQualifiedTypeName name="com.mphasis.FourKProcessing"/>
-    <fullyQualifiedTypeName name="java.lang.ProcessHandle"/>
-    <fullyQualifiedTypeName name="com.mphasis.CashPayment"/>
-    <fullyQualifiedTypeName name="com.mphasis.NetBanking"/>
-    <fullyQualifiedTypeName name="com.mphasis.Payment"/>
-    <fullyQualifiedTypeName name="com.mphasis.UpiPayment"/>
-    <fullyQualifiedTypeName name="com.mphasis.Person"/>
-    <fullyQualifiedTypeName name="java.util.ListIterator"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="com.mphasis.CityComparator"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
@@ -34,7 +18,6 @@
     <fullyQualifiedTypeName name="com.mphasis.Employee"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.mphasis.Node"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -52,12 +35,29 @@
     <fullyQualifiedTypeName name="java.beans.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.mphasis.BankaAccount"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.mphasis.ChefES"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.mphasis.App"/>
+    <fullyQualifiedTypeName name="com.mphasis.Calculator"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="com.mphasis.NumsUtili"/>
+    <fullyQualifiedTypeName name="com.mphasis.Shape"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.params.ParameterizedTest"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.ValueSource"/>
+    <fullyQualifiedTypeName name="com.mphasis.Triangle"/>
+    <fullyQualifiedTypeName name="com.mphasis.GCDemo"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="com.mphasis.MyResources"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.management.ManagementFactory"/>
 </qualifiedTypeNameHistroy>

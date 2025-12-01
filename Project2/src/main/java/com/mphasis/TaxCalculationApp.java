@@ -146,24 +146,61 @@ public class TaxCalculationApp {
         }
     }
 
+//    private void listProperties() {
+//        System.out.println("\n-- Properties List --");
+//        if (properties.isEmpty()) {
+//            System.out.println("No Data Present at This Moment (Properties).");
+//            return;
+//        }
+//        System.out.printf("%-10s %-12s %-12s %-6s %-6s %-12s\n",
+//                "PropID", "BuiltUpArea", "BaseValue", "City", "Age", "Tax");
+//        double sumTax = 0;
+//        for (Property p : properties) {
+//            double tax = p.calculateTax();
+//            sumTax += tax;
+//            System.out.printf("%-10s %-12.2f %-12.2f %-6s %-6d %-12s\n",
+//                    p.getId(), p.getBuiltUpArea(), p.getBaseValue(), p.isInMainCity()? "Y":"N", p.getAge(), df.format(tax));
+//        }
+//        System.out.println("Total properties: " + properties.size());
+//        System.out.println("Sum of property taxes: " + df.format(sumTax));
+//    }
+    
+    
     private void listProperties() {
         System.out.println("\n-- Properties List --");
         if (properties.isEmpty()) {
             System.out.println("No Data Present at This Moment (Properties).");
             return;
         }
-        System.out.printf("%-10s %-12s %-12s %-6s %-6s %-12s\n",
+
+        // Table header with borders
+        String line = "+----------+--------------+--------------+--------+------+--------------+";
+        System.out.println(line);
+        System.out.printf("| %-8s | %-12s | %-12s | %-6s | %-4s | %-12s |\n",
                 "PropID", "BuiltUpArea", "BaseValue", "City", "Age", "Tax");
+        System.out.println(line);
+
         double sumTax = 0;
         for (Property p : properties) {
             double tax = p.calculateTax();
             sumTax += tax;
-            System.out.printf("%-10s %-12.2f %-12.2f %-6s %-6d %-12s\n",
-                    p.getId(), p.getBuiltUpArea(), p.getBaseValue(), p.isInMainCity()? "Y":"N", p.getAge(), df.format(tax));
+            System.out.printf("| %-8s | %-12.2f | %-12.2f | %-6s | %-4d | %-12s |\n",
+                    p.getId(),
+                    p.getBuiltUpArea(),
+                    p.getBaseValue(),
+                    p.isInMainCity() ? "Y" : "N",
+                    p.getAge(),
+                    df.format(tax));
         }
+
+        // Footer line
+        System.out.println(line);
+
+        // Summary
         System.out.println("Total properties: " + properties.size());
         System.out.println("Sum of property taxes: " + df.format(sumTax));
     }
+
 
     private void searchProperty() {
         if (properties.isEmpty()) {
@@ -251,24 +288,61 @@ public class TaxCalculationApp {
         }
     }
 
+//    private void listVehicles() {
+//        System.out.println("\n-- Vehicles List --");
+//        if (vehicles.isEmpty()) {
+//            System.out.println("No Data Present at This Moment (Vehicles).");
+//            return;
+//        }
+//        System.out.printf("%-8s %-12s %-10s %-8s %-8s %-8s\n",
+//                "RegNo", "Brand", "Cost", "Vel", "Seats", "Tax");
+//        double sumTax = 0;
+//        for (Vehicle v : vehicles) {
+//            double tax = v.calculateTax();
+//            sumTax += tax;
+//            System.out.printf("%-8s %-12s %-10.2f %-8d %-8d %-8s\n",
+//                    v.getRegistrationNumber(), v.getBrand(), v.getPurchaseCost(), v.getMaxVelocity(), v.getCapacity(), df.format(tax));
+//        }
+//        System.out.println("Total vehicles: " + vehicles.size());
+//        System.out.println("Sum of vehicle taxes: " + df.format(sumTax));
+//    }
+    
+    
     private void listVehicles() {
         System.out.println("\n-- Vehicles List --");
         if (vehicles.isEmpty()) {
             System.out.println("No Data Present at This Moment (Vehicles).");
             return;
         }
-        System.out.printf("%-8s %-12s %-10s %-8s %-8s %-8s\n",
+
+        // Table header with borders
+        String line = "+----------+--------------+------------+----------+----------+----------+";
+        System.out.println(line);
+        System.out.printf("| %-8s | %-12s | %-10s | %-8s | %-8s | %-8s |\n",
                 "RegNo", "Brand", "Cost", "Vel", "Seats", "Tax");
+        System.out.println(line);
+
         double sumTax = 0;
         for (Vehicle v : vehicles) {
             double tax = v.calculateTax();
             sumTax += tax;
-            System.out.printf("%-8s %-12s %-10.2f %-8d %-8d %-8s\n",
-                    v.getRegistrationNumber(), v.getBrand(), v.getPurchaseCost(), v.getMaxVelocity(), v.getCapacity(), df.format(tax));
+            System.out.printf("| %-8s | %-12s | %-10.2f | %-8d | %-8d | %-8s |\n",
+                    v.getRegistrationNumber(),
+                    v.getBrand(),
+                    v.getPurchaseCost(),
+                    v.getMaxVelocity(),
+                    v.getCapacity(),
+                    df.format(tax));
         }
+
+        // Footer line
+        System.out.println(line);
+
+        // Summary
         System.out.println("Total vehicles: " + vehicles.size());
         System.out.println("Sum of vehicle taxes: " + df.format(sumTax));
     }
+
 
     private void searchVehicle() {
         if (vehicles.isEmpty()) {
@@ -324,6 +398,24 @@ public class TaxCalculationApp {
         }
     }
 
+//    private void displayCombinedTotals() {
+//        double propSum = properties.stream().mapToDouble(Property::calculateTax).sum();
+//        double vehSum = vehicles.stream().mapToDouble(Vehicle::calculateTax).sum();
+//        int propCount = properties.size();
+//        int vehCount = vehicles.size();
+//
+//        if (propCount == 0 && vehCount == 0) {
+//            System.out.println("No Data Present at This Moment (Neither properties nor vehicles).");
+//            return;
+//        }
+//        System.out.println("\n--- Combined Summary ---");
+//        System.out.println("Total properties: " + propCount + " | Sum of property taxes: " + df.format(propSum));
+//        System.out.println("Total vehicles: " + vehCount + " | Sum of vehicle taxes: " + df.format(vehSum));
+//        System.out.println("Total tax payable (properties + vehicles): " + df.format(propSum + vehSum));
+//    }
+
+    
+    
     private void displayCombinedTotals() {
         double propSum = properties.stream().mapToDouble(Property::calculateTax).sum();
         double vehSum = vehicles.stream().mapToDouble(Vehicle::calculateTax).sum();
@@ -334,12 +426,33 @@ public class TaxCalculationApp {
             System.out.println("No Data Present at This Moment (Neither properties nor vehicles).");
             return;
         }
+
         System.out.println("\n--- Combined Summary ---");
-        System.out.println("Total properties: " + propCount + " | Sum of property taxes: " + df.format(propSum));
-        System.out.println("Total vehicles: " + vehCount + " | Sum of vehicle taxes: " + df.format(vehSum));
-        System.out.println("Total tax payable (properties + vehicles): " + df.format(propSum + vehSum));
+
+        // Table header with borders
+        String line = "+----------------+----------+----------------------+";
+        System.out.println(line);
+        System.out.printf("| %-14s | %-8s | %-20s |\n", "Category", "Quantity", "Tax");
+        System.out.println(line);
+
+        // Table rows
+        System.out.printf("| %-14s | %-8d | %-20s |\n", 
+                "Properties", propCount, df.format(propSum));
+        System.out.printf("| %-14s | %-8d | %-20s |\n", 
+                "Vehicles", vehCount, df.format(vehSum));
+
+        // Footer line
+        System.out.println(line);
+
+        // Totals row
+        System.out.printf("| %-14s | %-8d | %-20s |\n", 
+                "Total", (propCount + vehCount), df.format(propSum + vehSum));
+
+        // Final border
+        System.out.println(line);
     }
 
+    
     // --------------------
     // Persistence (serialize/deserialize)
     // --------------------

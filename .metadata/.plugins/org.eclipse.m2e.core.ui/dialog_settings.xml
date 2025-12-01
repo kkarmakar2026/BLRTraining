@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day8MavenProject"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day8MavenProject\src\main\java\com\mphasis\HelloMojo.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day7MavenProject\src\main\java\com\mphasis\QuickSort.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day4MavenProjects\src\main\java\com\mphasis\App.java"/>
@@ -36,28 +38,12 @@
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
 			<item value="com.mphasis"/>
-			<item value="com.mphasis.Day5MavenProjects"/>
-			<item value="com.mphasis.Day4MavenProjects"/>
-			<item value="com.mphasis.Day4MavenProject"/>
-			<item value="com.mphasis.Day3MavenProject"/>
-			<item value="com.mphasis.PracticeMphasis"/>
 		</list>
 		<list key="groupId">
 			<item value="com.mphasis"/>
 		</list>
 		<list key="artifactId">
-			<item value="TaxCalApp"/>
-			<item value="Day7MavenProject"/>
-			<item value="Day6MavenProjects"/>
-			<item value="Day6MavenProject"/>
-			<item value="Project2"/>
-			<item value="Day5MavenProjects"/>
-			<item value="Day5MavenProject"/>
-			<item value="Day4MavenProjects"/>
-			<item value="Day4MavenProject"/>
-			<item value="Day3MavenProject"/>
-			<item value="Day2MavenProject"/>
-			<item value="PracticeMphasis"/>
+			<item value="NewPlugin"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
