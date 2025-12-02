@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day9WebApp\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Project2\src\main\java\com\mphasis\TaxCalculationApp.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day8MavenProject"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day8MavenProject\src\main\java\com\mphasis\HelloMojo.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day7MavenProject\src\main\java\com\mphasis\QuickSort.java"/>
@@ -37,12 +39,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.mphasis.LoginApp"/>
 			<item value="com.mphasis"/>
 		</list>
 		<list key="groupId">
 			<item value="com.mphasis"/>
 		</list>
 		<list key="artifactId">
+			<item value="LoginApp"/>
+			<item value="Day9WebApp"/>
+			<item value="Day9MavenProject"/>
 			<item value="NewPlugin"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -85,5 +91,7 @@
 		<item key="height" value="529"/>
 		<item key="x" value="720"/>
 		<item key="y" value="164"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
 	</section>
 </section>
