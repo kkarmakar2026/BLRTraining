@@ -2,8 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day9WebApp\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\TaxCalculationApp\src\main\java\com\mphasis\util\InputUtils.java"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject\src\main\java\com\mphasis\Account.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Project2\src\main\java\com\mphasis\TaxCalculationApp.java"/>
+			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day9WebApp\src\main\webapp\WEB-INF\web.xml"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day8MavenProject"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day8MavenProject\src\main\java\com\mphasis\HelloMojo.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day7MavenProject\src\main\java\com\mphasis\QuickSort.java"/>
@@ -11,7 +13,6 @@
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day4MavenProjects\src\main\java\com\mphasis\App.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day3MavenProject\src\main\java\com\mphasis\LocalTimeDemo.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day2MavenProject\src\main\java\com\mphasis"/>
-			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject\src\main\java\com\mphasis\Account.java"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\Day1MavenProject\pom.xml"/>
 			<item value="C:\Users\koushik.karmakar1\eclipse-workspace\FirstJava\src\main\java\com\mphasis\First6.java"/>
 			<item value="C:\Users\koushik.karmakar1\Desktop\Practice"/>
@@ -39,13 +40,21 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.mphasis.LoginApp"/>
+			<item value="com.mphasis.Day11WebApp"/>
+			<item value="com.mphasis.JSP"/>
+			<item value="com.mphasis.MyServlets"/>
 			<item value="com.mphasis"/>
+			<item value="com.mphasis.LoginApp"/>
 		</list>
 		<list key="groupId">
 			<item value="com.mphasis"/>
 		</list>
 		<list key="artifactId">
+			<item value="Day11WebApp"/>
+			<item value="JSP"/>
+			<item value="MyServlets"/>
+			<item value="Day10WebApp"/>
+			<item value="TaxCalculationApp"/>
 			<item value="LoginApp"/>
 			<item value="Day9WebApp"/>
 			<item value="Day9MavenProject"/>

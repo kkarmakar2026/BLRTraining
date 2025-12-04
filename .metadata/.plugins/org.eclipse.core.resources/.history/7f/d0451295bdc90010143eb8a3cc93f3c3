@@ -1,9 +1,0 @@
-package com.mphasis;
-
-public class Item {
-	private int id;
-	private String itemName;
-	private double itemCost;
-	
-
-}

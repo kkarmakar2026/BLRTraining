@@ -1,6 +1,0 @@
-package com.mphasis;
-
-public class ArrayPointer<T> {
-	private T[] arr;
-
-}

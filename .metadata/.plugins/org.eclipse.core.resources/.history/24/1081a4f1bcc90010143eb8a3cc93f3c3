@@ -1,7 +1,0 @@
-package com.mphasis;
-
-public class Order<T> {
-	
-	private T item;
-
-}
